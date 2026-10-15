@@ -1,0 +1,1729 @@
+/* =========================================
+   DOKI TASK MANAGER
+   APP.CSS
+========================================= */
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #dff7f7;
+  color: #24343d;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+  min-height: 100vh;
+  background: #dff7f7;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.home-header {
+  height: 80px;
+  padding: 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  border-bottom: 1px solid #d7e8e8;
+}
+
+.home-header h1 {
+  margin: 0;
+  color: #168c91;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.home-header p {
+  margin: 3px 0 0;
+  color: #7a8b91;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   PROFILE BUTTON
+========================================= */
+
+.profile-open-button {
+  border: none;
+  background: #168c91;
+  color: white;
+
+  padding: 11px 20px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.profile-open-button:hover {
+  background: #10777b;
+}
+
+
+/* =========================================
+   HOME LAYOUT
+========================================= */
+
+.home-layout {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+
+/* =========================================
+   PROFILE SIDEBAR
+========================================= */
+
+.profile-sidebar {
+  width: 270px;
+
+  background: white;
+
+  border-right: 1px solid #d7e8e8;
+
+  padding: 25px 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================
+   SIDEBAR PROFILE
+========================================= */
+
+.sidebar-profile {
+  text-align: center;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #edf2f2;
+}
+
+.profile-circle {
+  width: 70px;
+  height: 70px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #168c91;
+  color: white;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sidebar-profile h3 {
+  margin: 12px 0 3px;
+  font-size: 17px;
+}
+
+.sidebar-profile p {
+  margin: 0;
+
+  color: #7a8b91;
+
+  font-size: 13px;
+
+  word-break: break-word;
+}
+
+
+/* =========================================
+   PROFILE MENU
+========================================= */
+
+.profile-menu {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.profile-menu button {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 13px 14px;
+
+  border-radius: 9px;
+
+  text-align: left;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  color: #45565d;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-menu button:hover {
+  background: #e8f7f7;
+}
+
+.profile-menu button.active {
+  background: #d7f1f1;
+
+  color: #168c91;
+
+  font-weight: 600;
+}
+
+.profile-menu button span {
+  background: #edf3f3;
+
+  padding: 3px 8px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.sidebar-logout {
+  margin-top: auto;
+
+  border: none;
+
+  background: #fff0f0;
+
+  color: #d64545;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.sidebar-logout:hover {
+  background: #ffe0e0;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.home-content {
+  flex: 1;
+
+  padding: 35px;
+
+  max-width: 1100px;
+
+  width: 100%;
+}
+
+.home-content > h2 {
+  margin-top: 0;
+
+  margin-bottom: 22px;
+
+  font-size: 28px;
+
+  color: #24343d;
+}
+
+
+/* =========================================
+   WELCOME CARD
+========================================= */
+
+.welcome-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-size: 22px;
+}
+
+.welcome-card p {
+  margin-bottom: 0;
+
+  color: #75868b;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.stats-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #168c91;
+}
+
+.stat-card p {
+  margin-bottom: 0;
+
+  color: #718187;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   TASK FORM
+========================================= */
+
+.task-form {
+  width: 100%;
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.task-form input {
+  flex: 1;
+
+  border: 1px solid #cddddd;
+
+  background: white;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.task-form input:focus {
+  border-color: #168c91;
+
+  box-shadow:
+    0 0 0 2px rgba(22, 140, 145, 0.1);
+}
+
+.task-form button {
+  border: none;
+
+  background: #168c91;
+
+  color: white;
+
+  padding: 13px 20px;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.task-form button:hover {
+  background: #10777b;
+}
+
+
+/* =========================================
+   MY TASKS
+========================================= */
+
+.dashboard-tasks {
+  margin-top: 10px;
+}
+
+.dashboard-tasks h2 {
+  margin-bottom: 18px;
+
+  font-size: 22px;
+}
+
+
+/* =========================================
+   TASK LIST
+========================================= */
+
+.task-list {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* =========================================
+   TASK ITEM
+========================================= */
+
+.task-item {
+  width: 100%;
+
+  background: white;
+
+  padding: 17px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.task-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+
+/* =========================================
+   COMPLETE / TICK BUTTON
+========================================= */
+
+.complete-button {
+  width: 22px;
+  height: 22px;
+
+  border: 2px solid #168c91;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  cursor: pointer;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  padding: 0;
+
+  transition: 0.2s;
+}
+
+.complete-button:hover {
+  background: #e3f7f7;
+}
+
+.complete-button.completed {
+  background: #168c91;
+
+  border-color: #168c91;
+
+  color: white;
+}
+
+
+/* =========================================
+   TASK TITLE
+========================================= */
+
+.task-title {
+  font-size: 15px;
+
+  word-break: break-word;
+
+  color: #24343d;
+}
+
+
+/*
+   IMPORTANT:
+   NO LINE-THROUGH HERE.
+   Completed tasks only get the tick mark.
+*/
+
+.completed-task .task-title {
+  color: #718187;
+
+  text-decoration: none;
+}
+
+
+/* =========================================
+   TASK ACTIONS
+========================================= */
+
+.task-actions {
+  display: flex;
+
+  gap: 7px;
+
+  margin-left: 15px;
+}
+
+.task-actions button {
+  border: none;
+
+  background: #f3f7f7;
+
+  padding: 8px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.task-actions button:hover {
+  background: #e3eeee;
+}
+
+.task-actions .active-important {
+  background: #fff4cf;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-button:hover {
+  background: #ffe4e4 !important;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 50px 20px;
+
+  text-align: center;
+
+  color: #718187;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+.empty-icon {
+  font-size: 40px;
+
+  margin-bottom: 10px;
+}
+
+.empty-state h3 {
+  margin-bottom: 8px;
+
+  color: #39494e;
+}
+
+.empty-state p {
+  margin-top: 0;
+}
+
+
+/* =========================================
+   HISTORY
+========================================= */
+
+.history-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.history-card {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.history-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 17px;
+}
+
+.history-card p {
+  margin: 5px 0;
+
+  color: #718187;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   USER PROFILE
+========================================= */
+
+.user-details-card {
+  max-width: 600px;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.user-details-card .profile-avatar {
+  width: 80px;
+  height: 80px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  background: #168c91;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+
+  font-weight: bold;
+}
+
+.user-details-card h3 {
+  margin-bottom: 25px;
+
+  font-size: 22px;
+}
+
+.detail-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  text-align: left;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #edf2f2;
+
+  gap: 20px;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #718187;
+
+  word-break: break-word;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.register-page {
+  min-height: 100vh;
+
+  background: #8edfe2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  padding: 30px;
+}
+
+.register-box {
+  width: 100%;
+
+  max-width: 950px;
+
+  min-height: 560px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.register-card {
+  width: 55%;
+
+  padding: 45px;
+}
+
+.register-card h1 {
+  margin-top: 0;
+
+  font-size: 34px;
+
+  color: #24343d;
+}
+
+.account-text {
+  color: #718187;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+}
+
+.account-text span {
+  color: #168c91;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.register-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.register-card label {
+  margin-top: 14px;
+
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #3e4e54;
+}
+
+.register-card input {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #d5e0e0;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.register-card input:focus {
+  border-color: #168c91;
+}
+
+.register-button {
+  margin-top: 22px;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #168c91;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.register-button:hover {
+  background: #10777b;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 22px 0;
+
+  color: #9aa7aa;
+
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #e4ebeb;
+}
+
+
+/* =========================================
+   SOCIAL BUTTONS
+========================================= */
+
+.social-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+.social-buttons button {
+  flex: 1;
+
+  padding: 11px;
+
+  background: white;
+
+  border: 1px solid #d8e2e2;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.social-buttons button:hover {
+  background: #f4fafa;
+}
+
+
+/* =========================================
+   GOOGLE LOGIN BUTTON
+========================================= */
+
+.google-login-button {
+  display: flex;
+
+  justify-content: center;
+
+  min-height: 40px;
+}
+
+
+/* =========================================
+   ILLUSTRATION
+========================================= */
+
+.illustration-section {
+  width: 45%;
+
+  background: #eafafa;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.illustration-section img {
+  max-width: 100%;
+
+  max-height: 450px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   DOKI NAME
+========================================= */
+
+.doki-name {
+  position: absolute;
+
+  top: 20px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  color: white;
+
+  letter-spacing: 3px;
+
+  z-index: 10;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-sidebar {
+    width: 220px;
+  }
+
+  .register-box {
+    max-width: 800px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .home-header {
+    padding: 0 18px;
+  }
+
+  .home-header h1 {
+    font-size: 23px;
+  }
+
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+
+    border-right: none;
+
+    border-bottom: 1px solid #d7e8e8;
+  }
+
+  .profile-menu {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar-logout {
+    margin-top: 15px;
+  }
+
+  .home-content {
+    padding: 20px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+
+  .task-item {
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    margin-left: 10px;
+  }
+
+
+  /* Register */
+
+  .register-page {
+    padding: 20px;
+  }
+
+  .register-box {
+    flex-direction: column;
+
+    max-width: 500px;
+  }
+
+  .register-card {
+    width: 100%;
+
+    padding: 30px 25px;
+  }
+
+  .illustration-section {
+    width: 100%;
+
+    min-height: 220px;
+
+    padding: 20px;
+  }
+
+  .illustration-section img {
+    max-height: 200px;
+  }
+
+  .doki-name {
+    top: 8px;
+
+    font-size: 22px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .detail-row span {
+    text-align: left;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL SCREENS
+========================================= */
+
+@media (max-width: 400px) {
+
+  .profile-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content {
+    padding: 15px;
+  }
+
+  .home-header {
+    height: 70px;
+  }
+
+  .home-layout {
+    min-height: calc(100vh - 70px);
+  }
+
+  .profile-open-button {
+    padding: 9px 12px;
+
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   LOGIN PAGE
+   Only Login page styles
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DOKI */
+
+.login-doki {
+  position: absolute;
+
+  top: 25px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 28px;
+  font-weight: 800;
+
+  color: #913cf2;
+
+  letter-spacing: 3px;
+
+  z-index: 10;
+}
+
+/* Purple top-right corner */
+
+.login-purple-corner {
+  position: absolute;
+
+  top: -180px;
+  right: -180px;
+
+  width: 480px;
+  height: 480px;
+
+  background: linear-gradient(
+    135deg,
+    #913cf2,
+    #7025d4
+  );
+
+  border-radius: 50%;
+
+  z-index: 1;
+}
+
+/* Login box */
+
+.login-card {
+  width: 430px;
+
+  background: white;
+
+  padding: 55px 50px 40px;
+
+  border-radius: 12px;
+
+  position: relative;
+  z-index: 5;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+
+.login-card h1 {
+  margin: 0;
+
+  font-size: 34px;
+
+  color: #222;
+
+  font-weight: 700;
+}
+
+/* Create account text */
+
+.login-subtitle {
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+  font-size: 13px;
+
+  color: #999;
+}
+
+.login-subtitle span {
+  color: #913cf2;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Input group */
+
+.login-input-group {
+  margin-bottom: 20px;
+}
+
+.login-input-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 13px;
+
+  color: #555;
+
+  font-weight: 600;
+}
+
+.login-input-group input {
+  width: 100%;
+  height: 48px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 8px;
+
+  padding: 0 14px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  background: white;
+}
+
+.login-input-group input:focus {
+  border-color: #913cf2;
+
+  box-shadow:
+    0 0 0 2px rgba(145, 60, 242, 0.08);
+}
+
+.login-input-group input::placeholder {
+  color: #bdbdbd;
+}
+
+/* Remember + Forgot */
+
+.login-options {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 5px;
+
+  margin-bottom: 25px;
+
+  font-size: 12px;
+}
+
+.remember-option {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #555;
+
+  cursor: pointer;
+}
+
+.remember-option input {
+  accent-color: #913cf2;
+
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #888;
+
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  color: #913cf2;
+}
+
+/* Login button */
+
+.login-main-button {
+  display: block;
+
+  width: 105px;
+  height: 42px;
+
+  margin-left: auto;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #913cf2;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-main-button:hover {
+  background: #7626d2;
+}
+
+/* Google section */
+
+.login-social-section {
+  margin-top: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.or-login {
+  margin-bottom: 14px;
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+/* Google button - LOGIN ONLY */
+
+.login-google-button {
+  min-height: 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .login-card {
+    width: calc(100% - 35px);
+
+    padding: 40px 30px;
+  }
+
+  .login-purple-corner {
+    width: 300px;
+    height: 300px;
+
+    top: -120px;
+    right: -120px;
+  }
+
+  .login-doki {
+    font-size: 24px;
+  }
+}
+/* =====================================================
+   LOGIN PAGE
+   ===================================================== */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f8f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* DOKI at top middle */
+
+.login-doki {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #913cf2;
+  z-index: 5;
+}
+
+/* Purple decorative corner */
+
+.login-purple-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #913cf2;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    0 100%
+  );
+}
+
+/* Login card */
+
+.login-card {
+  width: 430px;
+  max-width: 100%;
+  background: white;
+  border-radius: 18px;
+  padding: 45px 42px;
+  box-sizing: border-box;
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading */
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Subtitle */
+
+.login-subtitle {
+  text-align: center;
+  margin: 10px 0 30px;
+  color: #777;
+  font-size: 14px;
+}
+
+.login-subtitle span {
+  color: #913cf2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-subtitle span:hover {
+  text-decoration: underline;
+}
+
+/* Input group */
+
+.login-input-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+
+.login-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+
+.login-input-group input {
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8;
+  border-radius: 7px;
+  padding: 0 13px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.login-input-group input:focus {
+  border-color: #913cf2;
+  box-shadow:
+    0 0 0 2px rgba(145, 60, 242, 0.08);
+}
+
+.login-input-group input::placeholder {
+  color: #aaa;
+}
+
+/* Password wrapper */
+
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Give space for eye */
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 38px;
+}
+
+/* Small eye button */
+
+.password-eye-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  color: #777;
+  cursor: pointer;
+}
+
+.password-eye-button:hover {
+  color: #913cf2;
+}
+
+/* Small sketch eye */
+
+.password-eye-button svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+/* Remember / Forgot */
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 25px;
+  font-size: 13px;
+}
+
+.remember-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  color: #666;
+}
+
+.remember-option input {
+  width: 14px;
+  height: 14px;
+  accent-color: #913cf2;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #913cf2;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+
+.login-main-button {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 7px;
+  background: #913cf2;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-main-button:hover {
+  background: #7b2ed0;
+  transform: translateY(-1px);
+}
+
+/* Social section */
+
+.login-social-section {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.or-login {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* Google button */
+
+.login-google-button {
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .login-page {
+    padding: 70px 15px 25px;
+  }
+
+  .login-card {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .login-purple-corner {
+    width: 100px;
+    height: 100px;
+  }
+
+  .login-doki {
+    top: 20px;
+    font-size: 24px;
+  }
+
+  .login-card h1 {
+    font-size: 28px;
+  }
+
+  .login-options {
+    font-size: 12px;
+  }
+}
