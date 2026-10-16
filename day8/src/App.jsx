@@ -1,8 +1,7 @@
 
 import { useCallback, useEffect, useState } from "react";
-
-import Register from "./components/Register";
-import Login from "./components/Login";
+import Register from "./components/register.jsx";
+import Login from "./components/login.jsx";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 import Profile from "./components/Profile";
